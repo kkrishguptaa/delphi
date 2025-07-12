@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delphi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reseter.css@2.0.0/css/reseter.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/GulfsDisplay.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div id="scroll-smoother">
+      <header class="header">
+        <img data-speed="0.8" id="header-img" src="assets/heart.webp" alt="" />
+        <main>
+          <h1>Delphi</h1>
+          <p>The Oracle of CSS</p>
+          <a data-href="#index"><button>Enter the chambers</button></a>
+        </main>
+      </header>
+      <section class="index" id="index">
+        <h2>Index</h2>
+        <main>
+          <nav>
+            <a href="./concepts.html">Box Model, Cascade, Inheritance</a>
+            <a href="./fluid.html">Fluid Design (Responsive design)</a>
+            <a href="./layout.html">Layouts (Flexbox, Grid)</a>
+            <a href="./animations.html">Animations (Transitions, Keyframes)</a>
+          </nav>
+        </main>
+      </section>
+      <footer class="footer">
+        <p>
+          Made with <span class="heart">❤️</span> by
+          <a href="https://krishg.com">Krish Gupta</a>
+        </p>
+      </footer>
+      <script
+        defer
+        src="https://cdn.jsdelivr.net/combine/npm/gsap@3.13.0,npm/gsap@3.13.0/dist/ScrollTrigger.min.js,npm/gsap@3.13.0/dist/ScrollSmoother.min.js,npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js,npm/gsap@3.13.0/dist/Flip.min.js,npm/gsap@3.13.0/dist/InertiaPlugin.min.js"
+      ></script>
+    </div>
+    <script defer src="scripts/script.js"></script>
+  </body>
+</html>

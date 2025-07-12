@@ -1,0 +1,80 @@
+:root {
+  background-color: #1d63ed;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Gulfs Display Normal", sans-serif;
+  position: relative;
+}
+
+.header h1 {
+  font-size: clamp(4rem, 10vw, 10rem);
+  margin: 0;
+}
+
+.header p {
+  margin: 1em;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header button {
+  all: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border: #fff 2px solid;
+  background-color: #ffffff00;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.header button:hover {
+  background-color: #ffffff;
+  color: #1d63ed;
+}
+
+.header > img {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  min-width: 16rem;
+  min-height: 16rem;
+  width: min(60vw, 60vh);
+  max-width: 60rem;
+  max-height: 60rem;
+}
+
+.footer {
+  width: 100vw;
+  padding: 2rem;
+  text-align: center;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  color: #ffffff;
+  background-color: #00000030;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

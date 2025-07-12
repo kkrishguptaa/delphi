@@ -1,0 +1,27 @@
+.index {
+  padding: clamp(2rem, 10vw, 40rem);
+}
+
+.index h2 {
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-family: "Gulfs Display Normal", sans-serif;
+  margin-bottom: 1em;
+}
+
+.index nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.index nav a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 0.75px;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.index nav a:hover {
+  text-shadow: 0 0 5px #ffffff;
+}
