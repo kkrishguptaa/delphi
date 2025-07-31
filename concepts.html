@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delphi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reseter.css@2.0.0/css/reseter.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/GulfsDisplay.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/concepts.css" />
+  </head>
+  <body>
+    <div id="scroll-smoother">
+      <header class="header">
+        <img data-speed="0.8" id="header-img" src="assets/heart.webp" alt="" />
+        <main>
+          <h1>Concepts</h1>
+          <p>Box Model, Cascade, Inheritance</p>
+          <div
+            style="
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="./"><button>Back to the doors</button></a>
+            <a data-href="#content"><button>Enter the chambers</button></a>
+          </div>
+        </main>
+      </header>
+      <article id="content" class="content">
+        <section class="box-model">
+          <h2>Box Model</h2>
+          <p>
+            Nearly all, sizing and spacing issues in CSS can be traced back to
+            the box model.
+          </p>
+          <p>
+            Every element in CSS is a box. But the box is not a traditional box
+            but rather a postal package. It has a width, height, padding
+            (cushioning), border.
+          </p>
+          <p>So let's take a look into the physical aspect of a CSS box.</p>
+        </section>
+        <section class="box-sizing-section">
+          <h3>Box Sizing</h3>
+          <div id="css-box">
+            <div class="css-box-text">
+              <p>
+                The box-sizing property determines how the width and height of
+                an element are calculated.
+              </p>
+              <p>
+                <label for="box-sizing-select">Select box-sizing:</label>
+                <select id="box-sizing-select">
+                  <option value="content-box">content-box</option>
+                  <option value="border-box">border-box</option>
+                </select>
+              </p>
+              <ul>
+                <li>
+                  <code>content-box</code>: Width and height apply to the
+                  content only.
+                </li>
+                <li>
+                  <code>border-box</code>: Width and height include padding and
+                  border.
+                </li>
+              </ul>
+              <p>
+                In this model, the margin is denoted red, padding is green and
+                your actual HTML content is blue. The black border denotes the
+                boundary of the box. Properties such as width and height are
+                tied to this box.
+              </p>
+              <p>
+                If you element appears larger that you hoped it would, very
+                definitely you ended up using <code>content-box</code> and
+                vice-versa!
+              </p>
+              <p>
+                The default value is <code>content-box</code>, but
+                <code>border-box</code> is often preferred for easier layout
+                management.
+              </p>
+            </div>
+            <div class="box-margin" data-speed="0.7">
+              <div class="box-padding">
+                <div class="box-content box-sizing">
+                  <p>Content</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <footer class="footer">
+        <p>
+          Made with <span class="heart">❤️</span> by
+          <a href="https://krishg.com">Krish Gupta</a>
+        </p>
+      </footer>
+      <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/all.min.js"
+      ></script>
+    </div>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/concepts.js"></script>
+  </body>
+</html>

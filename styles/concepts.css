@@ -1,0 +1,52 @@
+#css-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+#css-box .css-box-text {
+  max-width: 600px;
+}
+
+#css-box #box-sizing-select {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  background: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#css-box .box-margin {
+  height: clamp(100px, 50vw, 300px);
+  aspect-ratio: 1 / 1;
+  background-color: lightcoral;
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 2vw, 2rem);
+}
+
+#css-box .box-padding {
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 2vw, 2rem);
+  background-color: lightgreen;
+  height: 100%;
+  width: 100%;
+  transition: border 0.3s ease-in-out;
+}
+
+#css-box .box-content {
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 2vw, 2rem);
+  background-color: skyblue;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: black;
+  transition: border 0.3s ease-in-out;
+}
+
+#css-box .box-sizing {
+  border: 2px solid black;
+}

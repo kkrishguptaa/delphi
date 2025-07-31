@@ -4,6 +4,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gulfs Display Normal", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
 .header {
   min-height: 100dvh;
   display: flex;
