@@ -23,7 +23,12 @@ document.querySelectorAll("a[data-href]").forEach((item) => {
   });
 });
 
-document.querySelectorAll("#scroll-smoother > article > *").forEach((el) => {
+const fadeUpElements = [
+  ...document.querySelectorAll(".fade-up"),
+  ...document.querySelectorAll("#scroll-smoother > article > *"),
+];
+
+fadeUpElements.forEach((el) => {
   gsap.from(el, {
     opacity: 0,
     y: "+=200",
